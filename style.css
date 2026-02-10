@@ -30,6 +30,77 @@ nav .nav-container {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    #nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+        flex-direction: column;
+        gap: 0;
+        padding: 1rem 2rem;
+        display: none;
+        width: 100%;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    #nav-menu.active {
+        display: flex;
+    }
+
+    #nav-menu li {
+        padding: 0.8rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    nav {
+        padding: 1rem 2rem;
+    }
+
+    nav .nav-container {
+        flex-wrap: nowrap;
+    }
 }
 
 nav h2 {
