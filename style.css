@@ -69,29 +69,53 @@ nav .nav-container {
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
+        z-index: 1001;
+    }
+
+    body.menu-open {
+        overflow: hidden;
+    }
+
+    /* Overlay oscuro */
+    body.menu-open::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 998;
     }
 
     #nav-menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
         background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
         flex-direction: column;
         gap: 0;
-        padding: 1rem 2rem;
-        display: none;
-        width: 100%;
-        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        padding: 2rem 1rem;
+        z-index: 999;
+        transition: right 0.3s ease;
+        overflow-y: auto;
     }
 
     #nav-menu.active {
-        display: flex;
+        right: 0;
     }
 
     #nav-menu li {
-        padding: 0.8rem 0;
+        padding: 1rem 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    #nav-menu a {
+        display: block;
+        font-size: 1.1em;
     }
 
     nav {

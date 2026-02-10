@@ -859,6 +859,7 @@
         hamburger.addEventListener('click', function() {
             hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
         });
 
         // Cerrar menú al hacer clic en un link
@@ -867,6 +868,7 @@
             link.addEventListener('click', function() {
                 hamburger.classList.remove('active');
                 navMenu.classList.remove('active');
+                document.body.classList.remove('menu-open');
             });
         });
     </script>
