@@ -14,6 +14,9 @@
             <div class="nav-left">
                 <h2 onclick="goToSection('inicio')" style="cursor: pointer; color: white;"><img src="logotipo.png" alt="Logo" class="nav-logo"> Alemania 2026</h2>
             </div>
+            <div class="nav-center">
+                <span id="nav-section-name" class="nav-section-name"></span>
+            </div>
             <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
@@ -30,6 +33,7 @@
                 <li><a onclick="goToSection('errores')">Errores</a></li>
                 <li><a onclick="goToSection('consejos')">Consejos</a></li>
                 <li><a onclick="goToSection('recursos')">Recursos</a></li>
+                <li><a onclick="goToSection('encuesta')" style="color: #fbbf24; font-weight: bold;">📋 Encuesta</a></li>
             </ul>
         </div>
     </nav>
@@ -797,6 +801,106 @@
         <p><strong>Última actualización: Febrero 2026</strong></p>
     </section>
 
+    <!-- ENCUESTA DE SATISFACCIÓN -->
+    <section id="encuesta">
+        <h2>📋 Encuesta de Satisfacción</h2>
+        <p style="font-size: 1.05em; color: #555; margin: 1.5rem 0;">Nos gustaría saber tu opinión sobre esta guía. Tu feedback nos ayuda a mejorar.</p>
+
+        <div class="container">
+            <form id="survey-form" class="survey-form">
+                <div class="form-group">
+                    <label for="name">¿Cuál es tu nombre? (Opcional)</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre">
+                </div>
+
+                <div class="form-group">
+                    <label>¿Qué tan útil fue la información?</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="utilidad" value="muy_util" required>
+                            <span>Muy útil</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="utilidad" value="util">
+                            <span>Útil</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="utilidad" value="poco_util">
+                            <span>Poco útil</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="utilidad" value="nada_util">
+                            <span>Nada útil</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>¿Encontraste la información clara y fácil de entender?</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="claridad" value="muy_clara" required>
+                            <span>Muy clara</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="claridad" value="clara">
+                            <span>Clara</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="claridad" value="confusa">
+                            <span>Confusa</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="claridad" value="muy_confusa">
+                            <span>Muy confusa</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>¿Qué secciones te fueron más útiles? (Selecciona las que apliquen)</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="secciones" value="visas">
+                            <span>Visas</span>
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="secciones" value="costos">
+                            <span>Costos</span>
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="secciones" value="ciudades">
+                            <span>Ciudades</span>
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="secciones" value="trabajo">
+                            <span>Trabajo</span>
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="secciones" value="idioma">
+                            <span>Idioma</span>
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="secciones" value="tramites">
+                            <span>Trámites</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="comentarios">¿Tienes algún comentario o sugerencia?</label>
+                    <textarea id="comentarios" name="comentarios" placeholder="Cuéntanos qué podrías mejorar..." rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Enviar Encuesta</button>
+            </form>
+
+            <div id="survey-success" class="alert alert-success" style="display: none; margin-top: 2rem;">
+                <strong>✅ ¡Gracias!</strong> Tu respuesta ha sido guardada. Apreciamos tu feedback.
+            </div>
+        </div>
+    </section>
+
     <!-- FOOTER -->
     <footer>
         <p>&copy; 2026 Guía Honesta: Viajar y Vivir en Alemania</p>
@@ -814,7 +918,8 @@
             'tramites': 'Trámites Burocráticos',
             'errores': 'Errores a Evitar',
             'consejos': 'Consejos Prácticos',
-            'recursos': 'Recursos Finales'
+            'recursos': 'Recursos Finales',
+            'encuesta': 'Encuesta de Satisfacción'
         };
 
         function goToSection(sectionId) {
@@ -840,17 +945,139 @@
                     locationIndicator.textContent = sectionNames[sectionId];
                 }
 
+                // Actualizar nombre en el navbar (mobile)
+                const navSectionName = document.getElementById('nav-section-name');
+                if (navSectionName && sectionNames[sectionId]) {
+                    navSectionName.textContent = sectionNames[sectionId];
+                }
+
                 // Marcar el link del navbar como activo
                 const activeLink = document.querySelector(`nav a[onclick="goToSection('${sectionId}')"]`);
                 if (activeLink) {
                     activeLink.classList.add('active');
                 }
+
+                // Guardar la sección actual
+                saveCurrentSection(sectionId);
             }
         }
 
         window.addEventListener('load', function() {
-            goToSection('inicio');
+            // Restaurar posición anterior o ir a inicio
+            const lastSection = localStorage.getItem('lastSection');
+            if (lastSection && document.getElementById(lastSection)) {
+                goToSection(lastSection);
+                // Restaurar la posición scroll si estaba en encuesta
+                if (lastSection === 'encuesta') {
+                    const lastScrollPos = localStorage.getItem('lastScrollPos');
+                    if (lastScrollPos) {
+                        setTimeout(() => {
+                            window.scrollTo(0, parseInt(lastScrollPos));
+                        }, 100);
+                    }
+                }
+                // Restaurar datos de la encuesta
+                restoreSurveyData();
+            } else {
+                goToSection('inicio');
+            }
         });
+
+        // Guardar sección actual cuando se navega
+        function saveCurrentSection(sectionId) {
+            localStorage.setItem('lastSection', sectionId);
+        }
+
+        // Guardar posición scroll si estamos en encuesta
+        window.addEventListener('scroll', function() {
+            const activeSections = document.querySelectorAll('section.active');
+            if (activeSections.length > 0) {
+                const activeSection = activeSections[0];
+                if (activeSection.id === 'encuesta') {
+                    localStorage.setItem('lastScrollPos', window.scrollY);
+                }
+            }
+        });
+
+        // Funciones para guardar y restaurar datos de la encuesta
+        function saveSurveyData() {
+            const surveyForm = document.getElementById('survey-form');
+            if (!surveyForm) return;
+
+            const formData = {
+                name: document.getElementById('name')?.value || '',
+                utilidad: document.querySelector('input[name="utilidad"]:checked')?.value || '',
+                claridad: document.querySelector('input[name="claridad"]:checked')?.value || '',
+                comentarios: document.getElementById('comentarios')?.value || '',
+                secciones: Array.from(document.querySelectorAll('input[name="secciones"]:checked')).map(el => el.value)
+            };
+            localStorage.setItem('surveyData', JSON.stringify(formData));
+        }
+
+        function restoreSurveyData() {
+            const savedData = localStorage.getItem('surveyData');
+            if (!savedData) return;
+
+            try {
+                const formData = JSON.parse(savedData);
+                
+                if (formData.name) {
+                    const nameInput = document.getElementById('name');
+                    if (nameInput) nameInput.value = formData.name;
+                }
+
+                if (formData.utilidad) {
+                    const utilidadRadio = document.querySelector(`input[name="utilidad"][value="${formData.utilidad}"]`);
+                    if (utilidadRadio) utilidadRadio.checked = true;
+                }
+
+                if (formData.claridad) {
+                    const claridadRadio = document.querySelector(`input[name="claridad"][value="${formData.claridad}"]`);
+                    if (claridadRadio) claridadRadio.checked = true;
+                }
+
+                if (formData.comentarios) {
+                    const comentariosTextarea = document.getElementById('comentarios');
+                    if (comentariosTextarea) comentariosTextarea.value = formData.comentarios;
+                }
+
+                if (formData.secciones && formData.secciones.length > 0) {
+                    formData.secciones.forEach(value => {
+                        const checkbox = document.querySelector(`input[name="secciones"][value="${value}"]`);
+                        if (checkbox) checkbox.checked = true;
+                    });
+                }
+            } catch (e) {
+                console.log('Error restaurando datos');
+            }
+        }
+
+        // Agregar listeners a los inputs de la encuesta para guardar automáticamente
+        const surveyInputs = document.querySelectorAll('#survey-form input, #survey-form textarea');
+        surveyInputs.forEach(input => {
+            input.addEventListener('change', saveSurveyData);
+            input.addEventListener('input', saveSurveyData);
+        });
+
+        // Manejo del envío de la encuesta
+        const surveyForm = document.getElementById('survey-form');
+        if (surveyForm) {
+            surveyForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                saveSurveyData();
+                
+                const successMessage = document.getElementById('survey-success');
+                if (successMessage) {
+                    successMessage.style.display = 'block';
+                }
+                
+                this.style.display = 'none';
+                
+                // Guardar que la encuesta fue completada
+                localStorage.setItem('surveyCompleted', 'true');
+            });
+        }
+
 
         // Menú hamburguesa
         const hamburger = document.getElementById('hamburger');
