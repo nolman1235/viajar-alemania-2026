@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="logotipo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajar y Vivir en Alemania 2026 - Guía Honesta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-container">
+            <h2 onclick="goToSection('inicio')" style="cursor: pointer; color: white;"><img src="logotipo.png" alt="Logo" class="nav-logo"> Alemania 2026</h2>
+            <ul>
+                <li><a onclick="goToSection('inicio')">Inicio</a></li>
+                <li><a onclick="goToSection('visas')">Visas</a></li>
+                <li><a onclick="goToSection('costos')">Costos</a></li>
+                <li><a onclick="goToSection('ciudades')">Ciudades</a></li>
+                <li><a onclick="goToSection('trabajo')">Trabajo</a></li>
+                <li><a onclick="goToSection('idioma')">Idioma</a></li>
+                <li><a onclick="goToSection('tramites')">Trámites</a></li>
+                <li><a onclick="goToSection('errores')">Errores</a></li>
+                <li><a onclick="goToSection('consejos')">Consejos</a></li>
+                <li><a onclick="goToSection('recursos')">Recursos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- UBICACIÓN -->
+    <div class="location-indicator">
+        <span id="current-location">Inicio</span>
+    </div>
+
+    <!-- INICIO -->
+    <section id="inicio" class="active">
+        <header>
+            <h1 style="color: black;"><span class="highlight">¿Trabajar y Vivir en Alemania en 2026?</span></h1>
+            <p style="color: black;"><span class="highlight">La guía honesta que necesitas antes de tomar la decisión</span></p>
+        </header>
+
+        <div class="container">
+            <p style="font-size: 1.1em; color: #555; margin: 2rem 0;">
+                Alemania es una excelente oportunidad: demanda laboral real, salarios competitivos, estabilidad legal y calidad de vida. 
+                Pero no es fácil ni rápido. Esta guía te dice exactamente qué esperar, qué necesitas preparar y cómo evitar los errores más comunes.
+            </p>
+
+            <div class="alert alert-warning">
+                <strong>⚠️ Lo más importante:</strong> Vengas por turismo, estudio o trabajo, Alemania requiere preparación seria: idioma, dinero ahorrado, documentos en orden y expectativas realistas. Sin esto, fracasarás.
+            </div>
+
+            <h3>¿Para quién es esta guía?</h3>
+            <ul>
+                <li><strong>Trabajadores de Latinoamérica</strong> que buscan empleo en Alemania</li>
+                <li><strong>Estudiantes</strong> que quieren estudiar en Alemania</li>
+                <li><strong>Personas curiosas</strong> que consideran migrar legalmente</li>
+                <li><strong>Emprendedores</strong> que buscan oportunidades europeas</li>
+            </ul>
+
+            <h3>Lo que encontrarás aquí:</h3>
+            <ul>
+                <li>✅ Tipos de visa y cómo conseguirlas legalmente</li>
+                <li>✅ Costos reales de vivienda, comida y transporte</li>
+                <li>✅ Ciudades comparadas por costo y oportunidades</li>
+                <li>✅ Sectores laborales con demanda</li>
+                <li>✅ Por qué el idioma es crítico</li>
+                <li>✅ Trámites burocráticos paso a paso</li>
+                <li>✅ Errores que cometen y cómo evitarlos</li>
+                <li>✅ Consejos prácticos de gente que vive allá</li>
+            </ul>
+
+            <div class="alert alert-success">
+                <strong>💡 La realidad en números:</strong> Si llegas con visa válida, dinero ahorrado (3000-5000 EUR), nivel de alemán A2-B1 y flexibilidad, tu probabilidad de éxito es muy alta. Sin esto, será difícil.
+            </div>
+
+            <div class="btn-group">
+                <button class="btn btn-primary" onclick="goToSection('visas')">Empezar: Tipos de Visa →</button>
+                <button class="btn btn-secondary" onclick="goToSection('costos')">Costear el Viaje →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISAS -->
+    <section id="visas">
+        <h2>🛂 Visas y Requisitos Legales</h2>
+        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=200&h=150&fit=crop" alt="Pasaporte" class="section-image">
+
+        <h3>1. Visa de Turismo (Schengen)</h3>
+        <div class="card">
+            <p><strong>Duración:</strong> 90 días en 180 días</p>
+            <p><strong>Requisitos:</strong> Pasaporte válido, fondos (≈1000 EUR/mes), seguro médico Schengen</p>
+            <p><strong>Limitaciones:</strong> ❌ No puedes trabajar (ni informal)</p>
+            <p><strong>Costo:</strong> 80 EUR</p>
+        </div>
+
+        <h3>2. Visa de Estudiante</h3>
+        <div class="card">
+            <p><strong>Duración:</strong> Durante estudios + 2 años después</p>
+            <p><strong>Requisitos:</strong> Admisión universitaria confirmada, fondos ≈10,000 EUR/año</p>
+            <p><strong>Ventajas:</strong> ✅ Puedes trabajar 20 h/semana, tiempo completo en vacaciones</p>
+        </div>
+
+        <h3>3. Visa de Trabajo (Skilled Worker)</h3>
+        <div class="card">
+            <p><strong>Duración:</strong> 4 años (renovable)</p>
+            <p><strong>Requisitos:</strong> OFERTA DE EMPLEO confirmada, título relevante, alemán B1</p>
+            <p><strong>Esta es la más común para trabajar legalmente en Alemania</strong></p>
+        </div>
+
+        <h3>4. Chancenkarte (Opportunity Card) - LA MÁS USADA</h3>
+        <div class="card">
+            <p><strong>Duración:</strong> 12 meses (renovable)</p>
+            <p><strong>Requisitos:</strong> Título universitario O formación profesional, alemán A1, fondos para vivir</p>
+            <p><strong>Ventajas:</strong> ✅ Puedes estar en Alemania buscando empleo LEGALMENTE, trabajar 20 h/semana</p>
+            <p><strong>Ideal para:</strong> Latinoamericanos que quieren llegar y buscar trabajo</p>
+        </div>
+
+        <h3>⚠️ Advertencias</h3>
+        <div class="alert alert-danger">
+            <ul>
+                <li>❌ No existe "visa de trabajo fácil" sin oferta previa</li>
+                <li>❌ Trabajar sin visa válida = deportación inmediata</li>
+                <li>❌ Cambiar de turismo a trabajo después es muy complicado</li>
+                <li>❌ El idioma es crítico: cuanto mejor tu alemán, más fácil todo</li>
+            </ul>
+        </div>
+
+        <h3>📋 ¿Cuál es la mejor ruta para ti?</h3>
+        <div class="comparison">
+            <div class="comparison-item comparison-good">
+                <h4>✅ Tengo oferta de empleo</h4>
+                <p>Ruta: Visa Skilled Worker</p>
+                <p>El empleador te patrocina. Más directo.</p>
+            </div>
+            <div class="comparison-item comparison-bad">
+                <h4>⚠️ No tengo oferta</h4>
+                <p>Ruta: Chancenkarte + búsqueda intensa</p>
+                <p>Requiere dinero y paciencia, pero es legal.</p>
+            </div>
+            <div class="comparison-item comparison-good">
+                <h4>✅ Tengo diploma universitario</h4>
+                <p>Ruta: Chancenkarte O Visa Estudiante</p>
+                <p>Ambas son buenas opciones.</p>
+            </div>
+            <div class="comparison-item comparison-bad">
+                <h4>⚠️ Solo quiero visitar</h4>
+                <p>Ruta: Visa Schengen turismo</p>
+                <p>90 días, sin trabajo, sin promesas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- COSTOS -->
+    <section id="costos">
+        <h2>💰 Costos de Viaje y Vida en Alemania</h2>
+        <img src="https://images.unsplash.com/photo-1514432324607-2e4c00c170c7?w=200&h=150&fit=crop" alt="Dinero" class="section-image">
+
+        <h3>Gastos antes de viajar</h3>
+        <table>
+            <tr>
+                <th>Concepto</th>
+                <th>Costo (EUR)</th>
+                <th>Notas</th>
+            </tr>
+            <tr>
+                <td>Pasaje aéreo</td>
+                <td>600-1200</td>
+                <td>Busca 2-3 meses antes</td>
+            </tr>
+            <tr>
+                <td>Visa</td>
+                <td>80-200</td>
+                <td>Depende del tipo</td>
+            </tr>
+            <tr>
+                <td>Documentos (apostilla, traducciones)</td>
+                <td>200-400</td>
+                <td>Varía según país</td>
+            </tr>
+            <tr>
+                <td><strong>TOTAL APROX</strong></td>
+                <td><strong>910-1850</strong></td>
+                <td>Sin alojamiento inicial</td>
+            </tr>
+        </table>
+
+        <h3>Primer mes en Alemania</h3>
+        <table>
+            <tr>
+                <th>Concepto</th>
+                <th>Costo (EUR)</th>
+                <th>Realidad</th>
+            </tr>
+            <tr>
+                <td>Airbnb/hostal (20-30 días)</td>
+                <td>500-900</td>
+                <td>Mientras encuentras piso</td>
+            </tr>
+            <tr>
+                <td>Comida (supermercado)</td>
+                <td>200-300</td>
+                <td>No restaurantes</td>
+            </tr>
+            <tr>
+                <td>Transporte</td>
+                <td>50-100</td>
+                <td>Pase mensual</td>
+            </tr>
+            <tr>
+                <td>Teléfono/SIM</td>
+                <td>20</td>
+                <td>Prepago</td>
+            </tr>
+            <tr>
+                <td>Emergencias</td>
+                <td>200</td>
+                <td>Contingencia</td>
+            </tr>
+            <tr>
+                <td><strong>TOTAL PRIMER MES</strong></td>
+                <td><strong>970-1520</strong></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <h3>Costo mensual viviendo ya</h3>
+        <table>
+            <tr>
+                <th>Gasto</th>
+                <th>Económico</th>
+                <th>Medio</th>
+                <th>Cómodo</th>
+            </tr>
+            <tr>
+                <td><strong>Alquiler (1 habitación)</strong></td>
+                <td>400-600</td>
+                <td>700-1000</td>
+                <td>1100+</td>
+            </tr>
+            <tr>
+                <td><strong>Comida</strong></td>
+                <td>150-200</td>
+                <td>250-350</td>
+                <td>400+</td>
+            </tr>
+            <tr>
+                <td><strong>Transporte</strong></td>
+                <td>50</td>
+                <td>50-80</td>
+                <td>50-80</td>
+            </tr>
+            <tr>
+                <td><strong>Servicios (luz, agua, wifi)</strong></td>
+                <td>80-120</td>
+                <td>100-150</td>
+                <td>150+</td>
+            </tr>
+            <tr>
+                <td><strong>Seguro médico</strong></td>
+                <td>110-150</td>
+                <td>110-150</td>
+                <td>110-150</td>
+            </tr>
+            <tr>
+                <td><strong>Ocio/salidas</strong></td>
+                <td>100</td>
+                <td>200-300</td>
+                <td>400+</td>
+            </tr>
+            <tr>
+                <td><strong>TOTAL MENSUAL</strong></td>
+                <td><strong>890-1240</strong></td>
+                <td><strong>1310-1930</strong></td>
+                <td><strong>2210+</strong></td>
+            </tr>
+        </table>
+
+        <h3>💡 Dinero mínimo recomendado</h3>
+        <div class="alert alert-warning">
+            <p><strong>Si vienes con Chancenkarte (a buscar trabajo):</strong></p>
+            <p>🎯 <span class="highlight">5000-8000 EUR mínimo</span></p>
+            <p>Cubre: pasaje (1000), primer mes (1500), 3-4 meses de vida mientras buscas (3500).</p>
+        </div>
+
+        <div class="alert alert-success">
+            <p><strong>Si vienes como estudiante:</strong></p>
+            <p>🎯 <span class="highlight">10,000-15,000 EUR primer año</span></p>
+            <p>Cubre: matrícula (300), vivienda y vida (12 meses × 900-1200).</p>
+        </div>
+    </section>
+
+    <!-- CIUDADES -->
+    <section id="ciudades">
+        <h2>🏙️ Ciudades Recomendadas en Alemania</h2>
+        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=200&h=150&fit=crop" alt="Arquitectura alemana" class="section-image">
+
+        <h3>1. Berlín</h3>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=400&h=250&fit=crop" alt="Berlín" class="city-card-image">
+            <p><strong>Alquiler:</strong> 500-800 EUR | <strong>Oportunidades:</strong> ⭐⭐⭐⭐⭐</p>
+            <p><strong>Perfil:</strong> Capital, startup tech, joven, multicultural</p>
+            <p><strong>Buenos para:</strong> IT, startups, networking</p>
+            <p><strong>Desventajas:</strong> Alta competencia, mercado saturado</p>
+        </div>
+
+        <h3>2. Múnich</h3>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?w=400&h=250&fit=crop" alt="Múnich" class="city-card-image">
+            <p><strong>Alquiler:</strong> 700-1000 EUR | <strong>Oportunidades:</strong> ⭐⭐⭐⭐</p>
+            <p><strong>Perfil:</strong> Baviera, empresas grandes, profesional</p>
+            <p><strong>Buenos para:</strong> Ingeniería, auto (BMW, Siemens), profesionales establecidos</p>
+        </div>
+
+        <h3>3. Hamburgo</h3>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=400&h=250&fit=crop" alt="Hamburgo" class="city-card-image">
+            <p><strong>Alquiler:</strong> 550-800 EUR | <strong>Oportunidades:</strong> ⭐⭐⭐⭐</p>
+            <p><strong>Perfil:</strong> Puerto histórico, medios, balance vida-trabajo</p>
+            <p><strong>Buenos para:</strong> Quien busque balance precio-oportunidad</p>
+        </div>
+
+        <h3>4. Frankfurt</h3>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=400&h=250&fit=crop" alt="Frankfurt" class="city-card-image">
+            <p><strong>Alquiler:</strong> 650-900 EUR | <strong>Oportunidades:</strong> ⭐⭐⭐⭐</p>
+            <p><strong>Perfil:</strong> Centro financiero, bancos, corporativo</p>
+            <p><strong>Buenos para:</strong> Finanzas, banca, corporativo</p>
+        </div>
+
+        <h3>5. Leipzig</h3>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=400&h=250&fit=crop" alt="Leipzig" class="city-card-image">
+            <p><strong>Alquiler:</strong> 350-550 EUR (MÁS BARATO) | <strong>Oportunidades:</strong> ⭐⭐⭐</p>
+            <p><strong>Perfil:</strong> Tech creciente, joven, económica</p>
+            <p><strong>Buenos para:</strong> Quien tenga poco dinero, startup</p>
+            <p><strong>Desventajas:</strong> Menos conexiones, menos eventos, crecimiento más lento</p>
+        </div>
+
+        <h3>📊 Comparación rápida</h3>
+        <div class="comparison">
+            <div class="comparison-item comparison-good">
+                <h4>🎯 Mejor para tech/startup</h4>
+                <p>Berlín > Frankfurt > Múnich</p>
+            </div>
+            <div class="comparison-item comparison-good">
+                <h4>🎯 Mejor precio/oportunidad</h4>
+                <p>Leipzig > Núremberg > Dresde</p>
+            </div>
+            <div class="comparison-item comparison-good">
+                <h4>🎯 Mejor para ingeniería</h4>
+                <p>Stuttgart > Múnich > Núremberg</p>
+            </div>
+            <div class="comparison-item comparison-good">
+                <h4>🎯 Mejor con poco dinero</h4>
+                <p>Leipzig > Dresde > Colonia</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRABAJO -->
+    <section id="trabajo">
+        <h2>💼 Trabajo en Alemania</h2>
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=200&h=150&fit=crop" alt="Oficina" class="section-image">
+
+        <p><strong>Alemania necesita trabajadores.</strong> Aquí está la realidad honesta:</p>
+
+        <h3>Sectores CON ALTA DEMANDA</h3>
+
+        <h4>1. Tecnología (IT)</h4>
+        <div class="card">
+            <p><strong>Demanda:</strong> ⭐⭐⭐⭐⭐ CRÍTICA</p>
+            <p><strong>Posiciones:</strong> Backend, Frontend, Full Stack, DevOps, Data Science, ML</p>
+            <p><strong>Salario promedio:</strong> 50,000-80,000 EUR/año (junior a mid)</p>
+            <p><strong>Idioma:</strong> B1 de alemán O inglés fluido (muchos usan inglés)</p>
+            <p><strong>Tiempo real para conseguir:</strong> 2-6 meses si tienes portfolio sólido</p>
+        </div>
+
+        <h4>2. Salud (Medizin)</h4>
+        <div class="card">
+            <p><strong>Demanda:</strong> ⭐⭐⭐⭐⭐ CRÍTICA</p>
+            <p><strong>Posiciones:</strong> Médicos, enfermeros, técnicos médicos, psicólogos</p>
+            <p><strong>Salario:</strong> 45,000-70,000 EUR/año</p>
+            <p><strong>Idioma:</strong> B2 OBLIGATORIO</p>
+            <p>⚠️ IMPORTANTE: Títulos de Latinoamérica deben validarse (3-8 meses)</p>
+        </div>
+
+        <h4>3. Ingeniería</h4>
+        <div class="card">
+            <p><strong>Demanda:</strong> ⭐⭐⭐⭐⭐ MUY ALTA</p>
+            <p><strong>Salario:</strong> 50,000-75,000 EUR/año</p>
+            <p><strong>Employers notables:</strong> Siemens, BMW, Mercedes, Bosch, BASF, Daimler</p>
+        </div>
+
+        <h4>4. Oficios Técnicos</h4>
+        <div class="card">
+            <p><strong>Demanda:</strong> ⭐⭐⭐⭐⭐ CRÍTICA</p>
+            <p><strong>Posiciones:</strong> Electricistas, plomeros, soldadores, técnicos cualificados</p>
+            <p><strong>Salario:</strong> 35,000-50,000 EUR/año</p>
+            <p><strong>Ventaja:</strong> MENOS COMPETENCIA que IT, idioma A2 a menudo suficiente</p>
+        </div>
+
+        <h3>📋 Portales de empleo principales</h3>
+        <ul>
+            <li><strong>Indeed.de</strong> - El más grande</li>
+            <li><strong>LinkedIn.com</strong> - Networking + ofertas</li>
+            <li><strong>Xing.de</strong> - Red social profesional alemana</li>
+            <li><strong>StepStone.de</strong> - Empleos especializados</li>
+            <li><strong>FlexJobs.de</strong> - Trabajo remoto/flexible</li>
+        </ul>
+
+        <h3>⚠️ La verdad sobre conseguir trabajo</h3>
+        <div class="comparison">
+            <div class="comparison-item comparison-good">
+                <h4>✅ PLAN A (Recomendado)</h4>
+                <p>1. Llega con Chancenkarte</p>
+                <p>2. Busca trabajo PRESENCIALMENTE en Alemania</p>
+                <p>3. Haz entrevistas en persona</p>
+                <p>4. Tasa de éxito: 70-80%</p>
+            </div>
+            <div class="comparison-item comparison-bad">
+                <h4>⚠️ PLAN B (Muy arriesgado)</h4>
+                <p>1. Busca trabajo desde Latinoamérica</p>
+                <p>2. Negocia visa con empleador</p>
+                <p>3. Tasa de éxito: 20-30%</p>
+                <p>Realidad: Empleadores prefieren entrevistas presenciales</p>
+            </div>
+        </div>
+
+        <h3>💡 Consejo de oro</h3>
+        <div class="alert alert-success">
+            <p><strong>Especialmente para IT:</strong> Si tienes portfolio fuerte en GitHub y algoritmos sólidos, las empresas QUIEREN contratarte aunque no hables alemán perfecto.</p>
+            <p><strong>Enfócate:</strong> Skill > Idioma (pero idioma sigue siendo importante para crecer)</p>
+        </div>
+    </section>
+
+    <!-- IDIOMA -->
+    <section id="idioma">
+        <h2>🗣️ Idioma y Cultura</h2>
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=200&h=150&fit=crop" alt="Personas hablando" class="section-image">
+
+        <p><strong>Sin rodeos:</strong> El idioma es tu mayor barrera Y tu mayor oportunidad.</p>
+
+        <h3>¿Qué nivel de alemán necesitas?</h3>
+        <table>
+            <tr>
+                <th>Nivel</th>
+                <th>Lo que significa</th>
+                <th>Para trabajar</th>
+                <th>Tiempo*</th>
+            </tr>
+            <tr>
+                <td><strong>A1</strong></td>
+                <td>Principiante básico</td>
+                <td>❌ Insuficiente</td>
+                <td>3-4 meses</td>
+            </tr>
+            <tr>
+                <td><strong>A2</strong></td>
+                <td>Conversación lenta</td>
+                <td>⚠️ Oficios/manual</td>
+                <td>6-8 meses</td>
+            </tr>
+            <tr>
+                <td><strong>B1</strong></td>
+                <td>Conversación normal</td>
+                <td>✅ IT, tech, startup (+ inglés)</td>
+                <td>12-14 meses</td>
+            </tr>
+            <tr>
+                <td><strong>B2</strong></td>
+                <td>Fluido, detalles</td>
+                <td>✅ Corporativo, gerencia, salud</td>
+                <td>18-24 meses</td>
+            </tr>
+        </table>
+        <p>*Tiempo estimado estudiando 4-6 horas diarias</p>
+
+        <h3>Cómo aprender alemán</h3>
+        <h4>ANTES de viajar</h4>
+        <ul>
+            <li><strong>Duolingo</strong> - Básico, gratis, bueno para motivación</li>
+            <li><strong>DW Learn German</strong> - EXCELENTE, gratis, video de Deutsche Welle</li>
+            <li><strong>Babbel</strong> - Estructurado, 10 EUR/mes</li>
+            <li><strong>YouTube: Easy German</strong> - Videos gratuitos</li>
+        </ul>
+        <p>🎯 <strong>Objetivo:</strong> Llega con A1-A2 mínimo. Ya estarás en ventaja.</p>
+
+        <h4>Una vez EN Alemania</h4>
+        <ul>
+            <li><strong>Cursos intensivos:</strong> Universidad/instituto público 100-300 EUR</li>
+            <li><strong>Escuela privada:</strong> 400-800 EUR/mes (rápido pero caro)</li>
+            <li><strong>Inmersión:</strong> La mejor. Trabajar + vivir = acelera mucho</li>
+        </ul>
+
+        <h3>⚠️ Choques culturales importantes</h3>
+        <div class="alert alert-warning">
+            <p><strong>🚨 Puntualidad extrema:</strong> Llegar 5 minutos tarde es un insulto. Llega 10 minutos antes SIEMPRE.</p>
+            <p><strong>🚨 Directividad brutal:</strong> Los alemanes son DIRECTOS. Sin subterfugios, sin "depende". "Sí" o "No". No lo tomes personal, es su cultura.</p>
+            <p><strong>🚨 Privacidad sagrada:</strong> No preguntes sobre dinero, edad, relaciones personales. Los alemanes son reservados inicialmente.</p>
+            <p><strong>🚨 Ruido/limpieza:</strong> No hagas ruido después de 22:00 (Ruhezeit). Tirar basura = 100-300 EUR de multa. Los alemanes son obsesivos con limpieza.</p>
+            <p><strong>🚨 Todo es contractual:</strong> Lee contratos de alquiler 3 veces. No hay handshake agreements.</p>
+        </div>
+
+        <h3>Integración social</h3>
+        <div class="alert alert-warning">
+            <p><strong>Realidad no mencionada:</strong> Alemania es excelente para trabajo y vida, pero integración social es LENTA.</p>
+            <p><strong>Estrategia:</strong></p>
+            <ul>
+                <li>🤝 Busca comunidades de expatriados/latinos (Facebook, Xing)</li>
+                <li>🤝 Participa en hobbies (gimnasio, fútbol, cursos) para conocer gente</li>
+                <li>🤝 Sé paciente: amistad alemana toma 6-12 meses en formarse</li>
+                <li>🤝 Aprende código de comportamiento (puntualidad, privacidad, honestidad)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- TRÁMITES -->
+    <section id="tramites">
+        <h2>📋 Trámites al Llegar a Alemania</h2>
+        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=200&h=150&fit=crop" alt="Documentos" class="section-image">
+
+        <p><strong>Son tediosos pero obligatorios.</strong> Hazlos correctamente:</p>
+
+        <h3>1. Anmeldung (Registro de Residencia) - 🚨 CRÍTICO</h3>
+        <div class="card">
+            <p><strong>¿Qué es?</strong> Registrar tu dirección oficial. SIN ESTO, nada funciona.</p>
+            <p><strong>Duración:</strong> 2-4 semanas</p>
+            <p><strong>Documentos:</strong> Pasaporte, contrato alquiler firmado, formulario (te lo da la oficina)</p>
+            <p><strong>Dónde:</strong> Meldeamt (oficina municipal) de tu ciudad</p>
+            <p><strong>Costo:</strong> Gratis</p>
+            <p><strong>DEADLINE:</strong> 2 semanas después de llegar. Pasado eso = multa 300-1000 EUR</p>
+        </div>
+
+        <h3>2. Seguro Médico (Krankenversicherung) - 🚨 OBLIGATORIO</h3>
+        <div class="card">
+            <p><strong>¿Qué es?</strong> Seguro de salud OBLIGATORIO. Sin esto no puedes estar legalmente.</p>
+            <p><strong>Opciones:</strong> Público (TK, AOK, IKK) ≈110 EUR/mes O Privado ≈150-300 EUR/mes</p>
+            <p><strong>Recomendación:</strong> Público es suficiente, más barato</p>
+            <p><strong>Dónde:</strong> TK.de, AOK.de, IKK.de (directo online)</p>
+        </div>
+
+        <h3>3. Cuenta Bancaria (Bankkonto)</h3>
+        <div class="card">
+            <p><strong>¿Para qué?</strong> Recibir salario, pagar alquiler, transacciones</p>
+            <p><strong>Bancos recomendados:</strong> ING-DiBa (sin comisiones), N26 (mobile-first), Deutsche Bank</p>
+            <p><strong>Documentos:</strong> Pasaporte, Anmeldung confirmado</p>
+            <p><strong>Tiempo:</strong> 1-2 semanas para tarjeta</p>
+            <p><strong>Costo:</strong> Gratis - 50 EUR/año</p>
+        </div>
+
+        <h3>4. Número Fiscal (Steuer-ID)</h3>
+        <div class="card">
+            <p><strong>¿Para qué?</strong> Trabajar legalmente. Necesario para nómina.</p>
+            <p><strong>Cómo obtenerlo:</strong> Te lo asignan AUTOMÁTICAMENTE cuando haces Anmeldung</p>
+            <p><strong>Espera:</strong> Recibirás por correo en 2-3 semanas</p>
+        </div>
+
+        <h3>📋 Orden recomendado (primer mes)</h3>
+        <ol>
+            <li><strong>Semana 1:</strong> Anmeldung (SIN ESTO, NADA FUNCIONA)</li>
+            <li><strong>Semana 2:</strong> Seguro médico (3-5 días para aprobar)</li>
+            <li><strong>Semana 2-3:</strong> Cuenta bancaria (2 semanas para tarjeta)</li>
+            <li><strong>Semana 3:</strong> Espera número fiscal (llega solo por correo)</li>
+            <li><strong>Mes 2:</strong> Entrega número fiscal al empleador</li>
+        </ol>
+
+        <h3>⚠️ Multas comunes</h3>
+        <table>
+            <tr>
+                <th>Infracción</th>
+                <th>Multa</th>
+                <th>Cómo evitar</th>
+            </tr>
+            <tr>
+                <td>No hacer Anmeldung en 2 semanas</td>
+                <td>300-1000 EUR</td>
+                <td>HAZLO DENTRO DE 2 SEMANAS</td>
+            </tr>
+            <tr>
+                <td>Trabajar sin seguro médico</td>
+                <td>Multa + deportación</td>
+                <td>Cubre seguro ANTES de trabajar</td>
+            </tr>
+            <tr>
+                <td>Basura en calle</td>
+                <td>100-300 EUR</td>
+                <td>Usa contenedores</td>
+            </tr>
+            <tr>
+                <td>Ruido pasada las 22:00</td>
+                <td>50-500 EUR</td>
+                <td>Respeta Ruhezeit (silencio)</td>
+            </tr>
+            <tr>
+                <td>Trabajar sin visa válida</td>
+                <td>Deportación + multa gruesa</td>
+                <td>VISA PRIMERO, trabajo después</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- ERRORES -->
+    <section id="errores">
+        <h2>❌ Errores Comunes (Y cómo evitarlos)</h2>
+        <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=200&h=150&fit=crop" alt="Alerta" class="section-image">
+
+        <h3>Error 1: Llegar sin dinero suficiente</h3>
+        <div class="alert alert-danger">
+            <p><strong>¿Qué pasa?</strong> Llegas con 1000-2000 EUR pensando "buscaré trabajo rápido".</p>
+            <p><strong>Realidad:</strong> Tardarás 2-4 meses, alquiler 1500 EUR, y te quedas sin dinero en mes 2.</p>
+            <p>✅ <strong>Solución:</strong> Llega con 5000-8000 EUR mínimo si buscarás trabajo.</p>
+        </div>
+
+        <h3>Error 2: No aprender idioma antes</h3>
+        <div class="alert alert-danger">
+            <p><strong>¿Qué pasa?</strong> "Aprenderé en Alemania". Primeros 3 meses: SUFRIMIENTO extremo.</p>
+            <p>✅ <strong>Solución:</strong> Aprende A1 mínimo 3 meses antes. Ves a Alemania siendo ya A2. Enorme diferencia.</p>
+        </div>
+
+        <h3>Error 3: Creer que "todos hablan inglés"</h3>
+        <div class="alert alert-danger">
+            <p><strong>¿Qué pasa?</strong> Berlín/Frankfurt sí. El resto: NO. Aislamiento + frustración.</p>
+            <p>✅ <strong>Solución:</strong> Aprende alemán, aunque sea básico. Incluso si tu trabajo es en inglés.</p>
+        </div>
+
+        <h3>Error 4: No validar títulos ANTES</h3>
+        <div class="alert alert-danger">
+            <p><strong>¿Qué pasa?</strong> "Ya validaré cuando llegue". Esperas 3-8 meses. Proceso complicado.</p>
+            <p>✅ <strong>Solución:</strong> Empieza proceso de Anerkennung (reconocimiento) DESDE TU PAÍS ahora.</p>
+        </div>
+
+        <h3>Error 5: Trabajar sin visa correcta</h3>
+        <div class="alert alert-danger">
+            <p><strong>¿Qué pasa?</strong> "Haré cash en negro mientras consigo visa de trabajo".</p>
+            <p><strong>Resultado:</strong> Empleador denunciado, TÚ deportado, negro en registro para siempre.</p>
+            <p>✅ <strong>Solución:</strong> Chancenkarte es LEGAL. Trabaja 20 h/semana legalmente mientras buscas empleo formal.</p>
+        </div>
+
+        <h3>Error 6: Firmar contrato de alquiler sin leerlo</h3>
+        <div class="alert alert-danger">
+            <p><strong>¿Qué pasa?</strong> "Es estándar", firmas. Luego hay cláusulas raras → problemas legales.</p>
+            <p>✅ <strong>Solución:</strong> Lee CADA línea. Pide amigo alemán que revise. Es contrato legal vinculante.</p>
+        </div>
+
+        <h3>Error 7: No planificar tiempo para visa</h3>
+        <div class="alert alert-danger">
+            <p><strong>¿Qué pasa?</strong> "Solicito visa el mes antes". Embajada toma 4-8 semanas. Pierdes todo.</p>
+            <p>✅ <strong>Solución:</strong> Planifica 3-4 meses de anticipación. Empieza YA.</p>
+        </div>
+
+        <h3>Error 8: Aislamiento social</h3>
+        <div class="alert alert-danger">
+            <p><strong>¿Qué pasa?</strong> Trabajas solo, sin amigos alemanes (difícil hacer), depresión, "Alemania es fría".</p>
+            <p>✅ <strong>Solución:</strong> Busca meetup groups, comunidad, hobbies DESDE DAY 1. Es trabajo también.</p>
+        </div>
+
+        <h3>Error 9: Confiar en información falsa/desactualizada</h3>
+        <div class="alert alert-danger">
+            <p><strong>¿Qué pasa?</strong> Crees rumores en Facebook, foros viejos. Tomas malas decisiones.</p>
+            <p>✅ <strong>Solución:</strong> Verifica en sitios .de oficiales, gente que REALMENTE vive allá AHORA.</p>
+        </div>
+
+        <h3>Error 10: No respetar normas locales</h3>
+        <div class="alert alert-danger">
+            <p><strong>¿Qué pasa?</strong> "Soy extranjero, puedo hacer lo que quiero". Conflientos, multas, mala reputación.</p>
+            <p>✅ <strong>Solución:</strong> Acéptalo: Puntualidad, límites privacidad, limpieza. Es su país.</p>
+        </div>
+    </section>
+
+    <!-- CONSEJOS -->
+    <section id="consejos">
+        <h2>💡 Consejos Prácticos</h2>
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=200&h=150&fit=crop" alt="Consejos de viaje" class="section-image">
+
+        <h3>Ropa y Clima</h3>
+        <div class="card">
+            <p><strong>❄️ Inviernos son FRÍOS:</strong> -5 a 0°C, nieve, viento</p>
+            <p><strong>Necesitas:</strong> Abrigo grueso, botas impermeables, gorro, guantes, bufanda, ropa térmica en capas</p>
+            <p><strong>☀️ Verano:</strong> 20-28°C. Los alemanes lo celebran como Navidad.</p>
+            <p><strong>Pro tip:</strong> Compra ropa barata en Alemania (H&M, Zara, Decathlon). Segunda mano en Vinted.</p>
+        </div>
+
+        <h3>Apps útiles</h3>
+        <ul>
+            <li><strong>DB Navigator</strong> - Trenes</li>
+            <li><strong>Flixbus</strong> - Autobuses baratos</li>
+            <li><strong>Deliveroo/Wolt</strong> - Comida a domicilio</li>
+            <li><strong>ImmoScout24</strong> - Buscar casa</li>
+            <li><strong>WG-Gesucht</strong> - Pisos compartidos baratos</li>
+            <li><strong>DeepL</strong> - Traductor mejor que Google</li>
+            <li><strong>Citymapper</strong> - Transporte público</li>
+        </ul>
+
+        <h3>Transporte</h3>
+        <div class="card">
+            <p><strong>Autobús/Metro (U-Bahn):</strong> Excelente. 50-100 EUR/mes pase</p>
+            <p><strong>🚴 BICICLETA:</strong> Es la norma. Compra una usada (50-150 EUR). Es más rápido que autobús EN CIUDAD.</p>
+            <p><strong>Tren (S-Bahn):</strong> Conecta ciudades, confiable</p>
+            <p><strong>Flixbus:</strong> Para viajar barato por Europa</p>
+        </div>
+
+        <h3>Comida</h3>
+        <div class="card">
+            <p><strong>Supermercados económicos:</strong> Aldi, Lidl, Penny (donde van los alemanes)</p>
+            <p><strong>Presupuesto realista:</strong> 150-250 EUR/mes si cocinás</p>
+            <p><strong>Pro tips:</strong></p>
+            <ul>
+                <li>💧 Agua del grifo es perfecta. NO compres botellas (caro).</li>
+                <li>🍺 Cerveza es más barata que jugos/refrescos (serio)</li>
+                <li>🛒 Aldi tiene ropa deportiva barata también</li>
+            </ul>
+        </div>
+
+        <h3>Cheat codes de Alemania</h3>
+        <ul>
+            <li>🚴 <strong>Bicicleta > Rápido, económico, es norma</strong></li>
+            <li>♻️ <strong>Recicla correctamente:</strong> Papel, vidrio, plástico, orgánico (Los alemanes notan)</li>
+            <li>🤝 <strong>Sé honesto:</strong> Directividad se aprecia en Alemania</li>
+            <li>🎓 <strong>Universidades públicas = casi gratis</strong> si estudias (cuota 150-300 EUR/semestre)</li>
+            <li>🔗 <strong>Redes profesionales:</strong> LinkedIn + XING = acceso a 80% de empleos</li>
+            <li>📱 <strong>Smartphone:</strong> Todo está en app/online. Paperwork desaparece.</li>
+        </ul>
+    </section>
+
+    <!-- RECURSOS -->
+    <section id="recursos">
+        <h2>🔗 Recursos Oficiales</h2>
+
+        <h3>Gobierno y Visas</h3>
+        <ul>
+            <li><a href="https://www.make-it-in-germany.com/" target="_blank">Make it in Germany</a> - Portal oficial. MUUY útil para todo.</li>
+            <li><a href="https://www.auswaertiges-amt.de/" target="_blank">Auswärtiges Amt</a> - Ministerio de Asuntos Exteriores. Visas.</li>
+            <li><a href="https://www.bva.bund.de/" target="_blank">Bundesamt für Migration</a> - Leyes de migración actualizadas.</li>
+        </ul>
+
+        <h3>Buscar Trabajo</h3>
+        <ul>
+            <li><a href="https://www.indeed.de" target="_blank">Indeed.de</a> - Sitio de empleos más grande</li>
+            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a> - Networking + ofertas</li>
+            <li><a href="https://www.xing.com" target="_blank">XING</a> - Red social profesional alemana (importante aquí)</li>
+            <li><a href="https://www.stepstone.de" target="_blank">StepStone</a> - Empleos especializados</li>
+        </ul>
+
+        <h3>Aprender Idioma</h3>
+        <ul>
+            <li><a href="https://www.dw.com/de/deutsch-lernen/s-2055" target="_blank">Deutsche Welle (DW)</a> - Videos EXCELENTES, gratis</li>
+            <li><a href="https://www.duolingo.com/" target="_blank">Duolingo</a> - App básica, gratis</li>
+            <li><a href="https://www.goethe.de" target="_blank">Goethe Institut</a> - Cursos certificados</li>
+        </ul>
+
+        <h3>Reconocer Títulos</h3>
+        <ul>
+            <li><a href="https://www.anerkennung-in-deutschland.de/" target="_blank">Anerkennung in Deutschland</a> - Aquí verificas si tu título se reconoce</li>
+            <li><a href="https://www.anabin.kmk.org/" target="_blank">Anabin</a> - Base de datos de títulos extranjeros</li>
+        </ul>
+
+        <h3>Vivienda</h3>
+        <ul>
+            <li><a href="https://www.immobilienscout24.de" target="_blank">ImmoScout24</a> - Sitio principal</li>
+            <li><a href="https://www.wg-gesucht.de" target="_blank">WG-Gesucht</a> - Pisos compartidos (MÁS BARATO)</li>
+            <li><a href="https://www.airbnb.de" target="_blank">Airbnb</a> - Hospedaje temporal</li>
+        </ul>
+
+        <h3>Comunidades en Línea</h3>
+        <ul>
+            <li><strong>r/germany, r/Berlin, r/Munich</strong> - Subreddits activos</li>
+            <li><strong>Facebook:</strong> Busca "Expats en [ciudad]" o "Latinos en Alemania"</li>
+            <li><strong>InterNations:</strong> Red global de expatriados, eventos regularmente</li>
+        </ul>
+    </section>
+
+    <!-- AVISO LEGAL -->
+    <section id="aviso">
+        <h2>⚖️ Aviso Legal</h2>
+
+        <div class="alert alert-warning">
+            <p><strong>INFORMACIÓN ORIENTATIVA:</strong></p>
+            <p>Esta guía es educativa y orientativa. <strong>NO es consejo legal.</strong></p>
+            <p><strong>Las leyes, requisitos y costos pueden cambiar.</strong> Verifica SIEMPRE con fuentes oficiales antes de tomar decisiones importantes.</p>
+            <p><strong>Consulta con:</strong></p>
+            <ul>
+                <li>Portal oficial <strong>Make it in Germany</strong></li>
+                <li>Tu embajada/consulado alemán en tu país</li>
+                <li>Un abogado de inmigración si tu caso es complejo</li>
+            </ul>
+        </div>
+
+        <p>Los autores de esta guía no somos abogados, no representamos al gobierno alemán, y no nos responsabilizamos de decisiones que tomes basadas en esta información. Úsala como punto de partida, no como verdad absoluta.</p>
+
+        <p><strong>Última actualización: Febrero 2026</strong></p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Guía Honesta: Viajar y Vivir en Alemania</p>
+        <p>Hecha con ❤️ para personas reales, sin promesas falsas. Si llegaste aquí, buena suerte. Lo vas a lograr. 🇩🇪</p>
+    </footer>
+
+    <script>
+        const sectionNames = {
+            'inicio': 'Inicio',
+            'visas': 'Visas y Requisitos Legales',
+            'costos': 'Costos de Viaje y Vida',
+            'ciudades': 'Top Ciudades para Vivir',
+            'trabajo': 'Oportunidades Laborales',
+            'idioma': 'El Idioma Alemán',
+            'tramites': 'Trámites Burocráticos',
+            'errores': 'Errores a Evitar',
+            'consejos': 'Consejos Prácticos',
+            'recursos': 'Recursos Finales'
+        };
+
+        function goToSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Remover clase active de todos los links
+            const allNavLinks = document.querySelectorAll('nav a');
+            allNavLinks.forEach(link => {
+                link.classList.remove('active');
+            });
+
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.classList.add('active');
+                window.scrollTo(0, 0);
+                
+                // Actualizar indicador de ubicación
+                const locationIndicator = document.getElementById('current-location');
+                if (locationIndicator && sectionNames[sectionId]) {
+                    locationIndicator.textContent = sectionNames[sectionId];
+                }
+
+                // Marcar el link del navbar como activo
+                const activeLink = document.querySelector(`nav a[onclick="goToSection('${sectionId}')"]`);
+                if (activeLink) {
+                    activeLink.classList.add('active');
+                }
+            }
+        }
+
+        window.addEventListener('load', function() {
+            goToSection('inicio');
+        });
+    </script>
+</body>
+</html>
